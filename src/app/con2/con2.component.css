@@ -1,0 +1,9 @@
+.con-color {
+  color: red
+}
+
+.align-with-icon{
+  position: relative;
+  top: -6px;
+  margin-left: 5px; /* optional */
+}
