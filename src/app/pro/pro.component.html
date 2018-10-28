@@ -1,0 +1,16 @@
+<mat-card>
+  <mat-card-title>
+    <mat-icon class='pro-color' fxFlex='none'>add_circle</mat-icon>
+  </mat-card-title>
+  <mat-card-content>
+    <div fxLayout='row' fxLayoutAlign='space-between start'>
+      <div class='align-with-icon' fxFlex>{{pro.description}}</div>
+
+    </div>
+  </mat-card-content>
+  <mat-card-actions>
+    <mat-icon>edit</mat-icon>
+    <mat-icon>delete</mat-icon>
+    <app-vote style='float:right' [(count)]='pro.voted'></app-vote>
+  </mat-card-actions>
+</mat-card>

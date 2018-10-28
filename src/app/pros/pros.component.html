@@ -1,0 +1,12 @@
+<div>
+  <div fxLayout='row' fxLayoutAlign='space-between start'>
+    <mat-form-field fxFlex='100'>
+      <textarea matInput #proTitle placeholder="Pro"></textarea>
+    </mat-form-field>
+    <button fxFlex='none' mat-raised-button type='search' color="primary" (click)="add(proTitle.value)">Add Pro</button>
+  </div>
+
+  <div *ngFor="let pro of pros">
+    <app-pro [pro]="pro"></app-pro>
+  </div>
+</div>

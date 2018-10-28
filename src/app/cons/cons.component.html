@@ -1,0 +1,9 @@
+<div>
+  <mat-form-field>
+    <input matInput #conTitle placeholder="Con" />
+  </mat-form-field>
+  <button mat-raised-button type='search' color="primary" (click)="add(conTitle.value)">Add Con</button>
+  <div *ngFor="let con of cons">
+    <app-con [con]="con"></app-con>
+  </div>
+</div>
